@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Job name:</b>
+  <%= @career.job_name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @career.description %>
+</p>
+
+<p>
+  <b>How to apply:</b>
+  <%= @career.how_to_apply %>
+</p>
+
+
+<%= link_to 'Edit', edit_career_path(@career) %> |
+<%= link_to 'Back', careers_path %>

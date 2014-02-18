@@ -1,0 +1,24 @@
+<h1>Listing developers</h1>
+
+ 
+<ul class="small-block-grid-6">
+<% @developers.each do |developer| %>
+   
+  <li class="panel callout radius ">
+    <%= image_tag '/assets/github.png'%>
+     <b><%= developer.provider %></b><br>
+         <%= developer.uid %>
+        <strong><%= developer.nickname %></strong>
+         <%= image_tag developer.photo %>
+  
+     <%= link_to 'X', developer, method: :delete, data: { confirm: 'Are you sure?' } %> 
+    </li>
+   
+ 
+ 
+<% end %>
+</ul>
+
+<br />
+
+ 
